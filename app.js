@@ -34,5 +34,10 @@ function limpiarCampo(){
 }
 
 function sortearAmigo(){
+    
+    const nombresSorteados = [...amigos];
+    nombresSorteados.sort(() => Math.random() - 0.5);
+    const primerSorteado = nombresSorteados[0];
+    console.log(`El amigo secreto es: ${primerSorteado}`);
 
 }
